@@ -91,7 +91,11 @@ public class MainActivity extends Activity implements View.OnClickListener {
                 etNum1.setText(etNum1.getText()+"9");
                 break;
             case R.id.btnPoint:
-                etNum1.setText(etNum1.getText()+".");
+                if(etNum1.getText().toString().contains(".")) {
+                    etNum1.setText(""+ (int)num1);
+                }
+                else
+                    etNum1.setText(etNum1.getText()+".");
                 break;
             case R.id.btnC:
                 etNum1.setText("");
@@ -102,7 +106,6 @@ public class MainActivity extends Activity implements View.OnClickListener {
         }
         // check if the fields are empty
         if (TextUtils.isEmpty(etNum1.getText().toString())){
-//                || TextUtils.isEmpty(etNum2.getText().toString())) {
             return;
         }
 
