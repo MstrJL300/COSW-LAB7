@@ -211,7 +211,61 @@
             android:textSize="8pt"
             android:id="@+id/btnEnt">
         </Button>
+
     </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3pt"
+        android:layout_marginLeft="5pt"
+        android:layout_marginRight="5pt">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SEN"
+            android:id="@+id/btnSen"
+            android:layout_below="@+id/button10"
+            android:layout_alignLeft="@+id/button10"
+            android:layout_alignStart="@+id/button10"
+            android:layout_toStartOf="@+id/button0"
+            android:layout_alignRight="@+id/button0"
+            android:layout_alignEnd="@+id/button0"
+            android:layout_toLeftOf="@+id/button0" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="COS"
+            android:id="@+id/btnCos"
+            android:layout_below="@+id/btnC"
+            android:layout_alignLeft="@+id/btnSen"
+            android:layout_alignStart="@+id/btnSen" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TAN"
+            android:id="@+id/btnTan"
+            android:layout_alignBottom="@+id/buttoncos"
+            android:layout_alignLeft="@+id/buttondiv"
+            android:layout_alignStart="@+id/buttondiv" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Raiz"
+            android:id="@+id/btnRaiz"
+            android:layout_above="@+id/buttoneql"
+            android:layout_alignLeft="@+id/buttoneql"
+            android:layout_alignStart="@+id/buttoneql"
+            android:layout_alignRight="@+id/button"
+            android:layout_alignEnd="@+id/button" />
+
+    </LinearLayout>
+
+
+
+
+
+
+
     <TextView
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
@@ -222,4 +276,5 @@
         android:id="@+id/tvResult"
         android:gravity="center_horizontal">
     </TextView>
+
 </LinearLayout>
